@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get resources</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" defer src="scripts/getting-resources.js"></script>
+  </head>
+  <body>
+    <div>
+      <div class="mx-auto">
+        <div class="flex justify-between p-4 bg-black">
+          <div>
+            <h3 class="text-white text-lg">ArmiesOfZondor</h3>
+          </div>
+          <div class="flex items-center gap-4">
+            <a href="gathering-army.html" class="text-gray-500">Home</a>
+            <a href="getting-resources.html" class="text-white"
+              >Get Resources</a
+            >
+            <a href="your-army.html" class="text-gray-500">Your army</a>
+          </div>
+        </div>
+        <div class="p-4">
+          <div
+            class="grid grid-cols-1 md:grid-cols-3 gap-4 place-items-center py-8"
+          >
+            <!-- Resources Section -->
+            <div class="flex flex-col gap-2">
+              <img
+                src="images/gold-coin.png"
+                alt=""
+                class="w-12 mx-auto resource-image"
+                id="gold-image"
+              />
+              <p id="gold-count" class="text-center">0</p>
+            </div>
+            <div class="flex flex-col gap-2">
+              <img
+                src="images/metal.png"
+                alt=""
+                class="w-12 mx-auto resource-image"
+                id="metal-image"
+              />
+              <p id="metal-count" class="text-center">0</p>
+            </div>
+            <div class="flex flex-col gap-2">
+              <img
+                src="images/wood.png"
+                alt=""
+                class="w-12 mx-auto resource-image"
+                id="wood-image"
+              />
+              <p id="wood-count" class="text-center">0</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-14">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 place-items-center">
+            <!-- Mining Section -->
+            <div>
+              <img
+                src="images/mines-of-thiartha.jpg"
+                alt=""
+                class="rounded-full mining-image"
+              />
+            </div>
+            <!-- Wood Section -->
+            <div>
+              <img
+                src="images/woods-of-ghalduz.png"
+                alt=""
+                class="rounded-full wood-image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

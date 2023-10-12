@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gathering army</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script type="module" defer src="scripts/gathering-army.js"></script>
+  </head>
+  <body>
+    <div>
+      <div class="mx-auto">
+        <div class="flex justify-between p-4 bg-black">
+          <div>
+            <h3 class="text-white text-lg">ArmiesOfZondor</h3>
+          </div>
+          <div class="flex items-center gap-4">
+            <a href="gathering-army.html" class="text-white">Home</a>
+            <a href="getting-resources.html" class="text-gray-500"
+              >Get Resources</a
+            >
+            <a href="your-army.html" class="text-gray-500">Your army</a>
+          </div>
+        </div>
+        <div class="p-4">
+          <div
+            class="grid grid-cols-1 md:grid-cols-3 gap-4 place-items-center py-8"
+          >
+            <!-- Resources Section -->
+            <div class="flex flex-col gap-2">
+              <img src="images/gold-coin.png" alt="" class="w-12 mx-auto" />
+              <p id="gold-count" class="text-center">0</p>
+            </div>
+            <div class="flex flex-col gap-2">
+              <img src="images/metal.png" alt="" class="w-12 mx-auto" />
+              <p id="metal-count" class="text-center">0</p>
+            </div>
+            <div class="flex flex-col gap-2">
+              <img src="images/wood.png" alt="" class="w-12 mx-auto" />
+              <p id="wood-count" class="text-center">0</p>
+            </div>
+          </div>
+          <!-- Warriors Section -->
+          <div class="p-4">
+            <h1 class="text-2xl text-center py-4">Warriors</h1>
+            <div
+              class="warriors-output grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4"
+            ></div>
+            <h1 class="text-2xl text-center py-4">Animals</h1>
+            <div
+              class="animals-output grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4"
+            ></div>
+            <h1 class="text-2xl text-center py-4">WarMachines</h1>
+            <div
+              class="war-machines-output grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

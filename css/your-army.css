@@ -1,0 +1,19 @@
+/* Styling for Your Army Section */
+.your-army-warriors-output,
+.your-army-other-output {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+/* Styling for each item container */
+.rounded-md {
+  overflow: hidden;
+  margin: 8px;
+  border: 1px solid #ccc;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Hover effect */
+.rounded-md:hover {
+  transform: scale(1.05);
+}
